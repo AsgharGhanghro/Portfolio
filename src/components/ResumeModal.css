@@ -1,0 +1,452 @@
+/* ResumeModal.css - Dark Theme Version */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85); /* Darker backdrop */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.modal-container {
+  background: #1a2332; /* Dark background */
+  border-radius: 12px;
+  width: 100%;
+  max-width: 700px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Window Controls Header - Blackish gray with colored dots - EXTENDED */
+.modal-window-controls {
+  background: #0a0e14; /* Blackish-gray background */
+  height: 40px; /* Increased from 28px to 40px - extends more below dots */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: relative;
+}
+
+/* Optional: Add subtle gradient to make it look more polished */
+.modal-window-controls::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.window-dots {
+  display: flex;
+  gap: 10px; /* Slightly more gap between dots */
+  position: relative;
+  z-index: 2;
+}
+
+.window-dot {
+  width: 14px; /* Slightly larger dots */
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.window-dot:nth-child(1) {
+  background: #48bb78; /* Green */
+}
+
+.window-dot:nth-child(2) {
+  background: #ed8936; /* Yellow/Orange */
+}
+
+.window-dot:nth-child(3) {
+  background: #f56565; /* Red */
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  background: #0f1823; /* Darker header */
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.modal-close-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.resume-content {
+  padding: 24px;
+  overflow-y: auto;
+  flex: 1;
+  background: #1a2332;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.resume-name {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #ffffff; /* White text */
+  font-weight: 700;
+}
+
+.resume-position {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #06B6D4; /* Cyan accent */
+  font-weight: 600;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #b0bec5; /* Light gray text */
+}
+
+.contact-icon {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  color: #06B6D4; /* Cyan accent */
+  border-bottom: 2px solid rgba(6, 182, 212, 0.3);
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.section-content {
+  margin: 0;
+  line-height: 1.6;
+  color: #e0e0e0; /* Light gray */
+}
+
+.experience-section {
+  margin-bottom: 20px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05); /* Very dark gray */
+  border-radius: 8px;
+  border-left: 4px solid #06B6D4;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.experience-title {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff; /* White */
+  font-weight: 600;
+}
+
+.experience-period {
+  font-size: 14px;
+  color: #06B6D4; /* Cyan */
+  background: rgba(6, 182, 212, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.experience-company {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #b0bec5; /* Light gray */
+  font-style: italic;
+}
+
+.experience-description {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e0e0e0; /* Light gray */
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.experience-tag {
+  background: rgba(6, 182, 212, 0.15);
+  color: #06B6D4;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.education-section {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.05); /* Very dark gray */
+  border-radius: 8px;
+  border-left: 4px solid #06B6D4;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.education-degree {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff; /* White */
+  font-weight: 600;
+}
+
+.education-period {
+  font-size: 14px;
+  color: #06B6D4; /* Cyan */
+  background: rgba(6, 182, 212, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.education-institution {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #b0bec5; /* Light gray */
+  font-style: italic;
+}
+
+.education-description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e0e0e0; /* Light gray */
+}
+
+.modal-footer {
+  display: flex;
+  gap: 12px;
+  padding: 20px 24px;
+  background: #0f1823; /* Dark background */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.primary-btn,
+.secondary-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background: #06B6D4; /* Cyan */
+  color: #0B1220; /* Dark blue text for contrast */
+  border: none;
+}
+
+.primary-btn:hover {
+  background: #05a6c2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* PDF Note Section */
+.pdf-note {
+  margin-top: 24px;
+  padding: 16px;
+  background: rgba(6, 182, 212, 0.1); /* Light cyan background */
+  border-radius: 8px;
+  border-left: 4px solid #06B6D4;
+}
+
+.pdf-note p {
+  margin: 0;
+  font-size: 14px;
+  color: #e0e0e0; /* Light gray text */
+  line-height: 1.5;
+}
+
+.pdf-note strong {
+  color: #ffffff; /* White for emphasis */
+}
+
+/* Scrollbar styling */
+.resume-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.resume-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.resume-content::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.3);
+  border-radius: 4px;
+}
+
+.resume-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.5);
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    max-height: 90vh;
+    border-radius: 8px;
+  }
+  
+  .modal-window-controls {
+    height: 36px; /* Slightly reduced on mobile */
+    padding: 0 16px;
+  }
+  
+  .window-dots {
+    gap: 8px;
+  }
+  
+  .window-dot {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .modal-header {
+    padding: 16px 20px;
+  }
+  
+  .resume-content {
+    padding: 20px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .experience-period,
+  .education-period {
+    align-self: flex-start;
+  }
+  
+  .modal-footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+  
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-backdrop {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-container {
+  animation: slideUp 0.3s ease;
+}

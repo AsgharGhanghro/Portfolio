@@ -1,0 +1,94 @@
+/* Timeline.css - Mobile: Icons left, Cards right with centered alignment */
+.timeline-mobile-left {
+  padding: 0;
+}
+
+.timeline-mobile-left .MuiTimelineItem-root {
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  margin-bottom: 24px;
+}
+
+.timeline-mobile-left .MuiTimelineItem-root:before {
+  display: none !important;
+}
+
+/* Hide opposite content on mobile */
+.timeline-mobile-left .MuiTimelineOppositeContent-root {
+  display: none !important;
+}
+
+/* Timeline separator - Proper vertical alignment */
+.timeline-mobile-left .MuiTimelineSeparator-root {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin-left: 0 !important;
+  margin-right: 16px !important;
+  min-height: 100%; /* Ensure it spans full height */
+}
+
+/* Dot styling - Centered with card */
+.timeline-mobile-left .MuiTimelineDot-root {
+  margin: 0 !important;
+  width: 44px !important;
+  height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2; /* Above connector */
+}
+
+/* Connector - Vertical line spanning between dots */
+.timeline-mobile-left .MuiTimelineConnector-root {
+  flex: 1 !important;
+  width: 2px !important;
+  min-height: 16px !important; /* Gap between dot and next item */
+  margin: 0 auto !important; /* Center the line */
+}
+
+/* Content - Right side, centered vertically with dot */
+.timeline-mobile-left .MuiTimelineContent-root {
+  padding: 12px 0 !important;
+  padding-left: 0 !important;
+  text-align: left !important;
+  display: flex !important;
+  align-items: center !important; /* Vertically center with dot */
+  min-height: 100px; /* Minimum height to match dot area */
+}
+
+/* Paper/Card styling */
+.timeline-mobile-left .MuiPaper-root {
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* Mobile date chip */
+.timeline-mobile-left .mobile-date-chip {
+  margin-bottom: 12px !important;
+}
+
+/* Desktop styles - Preserve original behavior */
+@media (min-width: 769px) {
+  .timeline-mobile-left .MuiTimelineItem-root {
+    margin-bottom: 0;
+  }
+  
+  .timeline-mobile-left .MuiTimelineSeparator-root {
+    margin-right: initial !important;
+  }
+  
+  .timeline-mobile-left .MuiTimelineContent-root {
+    padding: 12px 16px !important;
+    align-items: flex-start !important;
+    min-height: auto !important;
+  }
+  
+  .timeline-mobile-left .mobile-date-chip {
+    display: none !important;
+  }
+  
+  .timeline-mobile-left .MuiTimelineOppositeContent-root {
+    display: block !important;
+  }
+}
