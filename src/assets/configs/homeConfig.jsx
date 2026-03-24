@@ -70,21 +70,6 @@ const homeConfig = {
 
      {
       id: "work-3",
-      title: "Machine Learning & Web Developer",
-      title_i18n: { en: "Freelance Developer", es: "Desarrollador Freelance" },
-      company: "Freelancing / Personal Work",
-      description_i18n: {
-        en: "Developed web-based tools and applications including a React portfolio, PDF converter, and AI-based plagiarism checker. Focused on clean UI, performance, and practical problem-solving.",
-        es: "Desarrollé herramientas web como portafolio en React, convertidor PDF y verificador de plagio basado en IA.",
-      },
-      date: "2024-2025",
-      icon: <BsClipboardData />,
-      tags: ["react", "javascript", "web-development", "ui-ux"],
-    },
-
-    
-    {
-      id: "work-2",
       title: "Deep Learning Engineer",
       title_i18n: { en: "Deep Learning Engineer", es: "Ingeniero de Deep Learning" },
       company: "Academic Experience",
@@ -92,13 +77,14 @@ const homeConfig = {
         en: "Designed and trained deep learning models including CNNs, RNNs, and transformers for tasks such as image classification, NLP, and time-series forecasting. Worked with TensorFlow and PyTorch to build, evaluate, and optimize neural network architectures.",
         es: "Diseñé y entrené modelos de deep learning incluyendo CNNs, RNNs y transformers para clasificación de imágenes, PLN y predicción de series temporales usando TensorFlow y PyTorch.",
       },
-      date: "2023-2024",
+      date: "2025-Present",
       icon: <FaMobileAlt />,
       tags: ["deep-learning", "tensorflow", "pytorch", "cnn", "nlp", "transformers"],
     },
+    
 
     {
-      id: "work-0",
+      id: "work-2",
       title: "Full Stack Developer",
       title_i18n: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
       company: "Academic & Personal Projects",
@@ -106,11 +92,25 @@ const homeConfig = {
         en: "Built and deployed full stack web applications using React for the frontend and Node.js/Express for the backend. Designed RESTful APIs, managed databases, and focused on responsive UI, clean architecture, and end-to-end functionality.",
         es: "Desarrollé aplicaciones web completas usando React en el frontend y Node.js/Express en el backend. Diseñé APIs RESTful, gestioné bases de datos y me enfoqué en interfaces responsivas y arquitectura limpia.",
       },
-      date: "2023-2024",
+      date: "2024-2026",
       icon: <DiCodeigniter />,
       tags: ["react", "nodejs", "express", "mongodb", "rest-api", "full-stack"],
     },
 
+    
+     {
+      id: "work-1",
+      title: "Machine Learning & Web Developer",
+      title_i18n: { en: "Freelance Developer", es: "Desarrollador Freelance" },
+      company: "Freelancing / Personal Work",
+      description_i18n: {
+        en: "Developed web-based tools and applications including a React portfolio, PDF converter, and AI-based plagiarism checker. Focused on clean UI, performance, and practical problem-solving.",
+        es: "Desarrollé herramientas web como portafolio en React, convertidor PDF y verificador de plagio basado en IA.",
+      },
+      date: "2023-Present",
+      icon: <BsClipboardData />,
+      tags: ["react", "javascript", "web-development", "ui-ux"],
+    },
   ],
 
   // RESUME SECTION - FIXED SPANISH TRANSLATIONS
